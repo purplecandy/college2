@@ -1,8 +1,7 @@
-header { 
+.tophead { 
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 3em;
-    margin: 20px auto;
 }
 
 nav {
