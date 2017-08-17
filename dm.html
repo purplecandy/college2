@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+    <br><h5 style="text-align:center;">Here all DM notes are indmxed!</h5>
+<div class="container">
+  <div class="min-container">
+<br>
+  {% for dm in site.categories.dm %}
+  <div class="row">
+    <div class="one column">{{dm.icon}}
+    </div>
+    <div class="eleven columns"><div class="attachment">
+        <ul><li><b>Name:</b>{{dm.title}}</li>
+            <li><b>Size:</b>{{dm.meta}}</li>
+            <li><b>Date Addmd:</b>{{dm.date}}</li>
+            <li><a href="{{dm.source}}" download>Download</a></li></ul>
+        </div></div>
+  </div>
+<br>
+<br>
+  {% endfor %}
+</div>
+</div>

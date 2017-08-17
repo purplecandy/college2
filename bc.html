@@ -3,13 +3,22 @@ layout: default
 ---
 
     <br><h5 style="text-align:center;">Here all BC notes are indexed!</h5>
+<div class="container">
+  <div class="min-container">
 <br>
-<ul>
-<li>
-  {% for bc in site.posts %}
-<a href="">{{bc.title}}</a>
-<p>{{bc.meta}}</p>
-<a href="">{{bc.source}}</a>
-</li>
+  {% for bc in site.categories.bc %}
+  <div class="row">
+    <div class="one column">{{bc.icon}}
+    </div>
+    <div class="eleven columns"><div class="attachment">
+        <ul><li><b>Name:</b>{{bc.title}}</li>
+            <li><b>Size:</b>{{bc.meta}}</li>
+            <li><b>Date Added:</b>{{bc.date}}</li>
+            <li><a href="{{bc.source}}" download>Download</a></li></ul>
+        </div></div>
+  </div>
+<br>
+<br>
   {% endfor %}
-</ul>
+</div>
+</div>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+    <br><h5 style="text-align:center;">Here all IP notes are indexed!</h5>
+<div class="container">
+  <div class="min-container">
+<br>
+  {% for ip in site.categories.ip %}
+  <div class="row">
+    <div class="one column">{{ip.icon}}
+    </div>
+    <div class="eleven columns"><div class="attachment">
+        <ul><li><b>Name:</b>{{ip.title}}</li>
+            <li><b>Size:</b>{{ip.meta}}</li>
+            <li><b>Date Added:</b>{{ip.date}}</li>
+            <li><a href="{{ip.source}}" download>Download</a></li></ul>
+        </div></div>
+  </div>
+<br>
+<br>
+  {% endfor %}
+</div>
+</div>
