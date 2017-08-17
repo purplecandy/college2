@@ -3,3 +3,13 @@ layout: default
 ---
 
     <br><h5 style="text-align:center;">Here all BC notes are indexed!</h5>
+<br>
+<ul>
+<li>
+  {% for bc in site.posts %}
+<a href="">{{bc.title}}</a>
+<p>{{bc.meta}}</p>
+<a href="">{{bc.source}}</a>
+</li>
+  {% endfor %}
+</ul>
